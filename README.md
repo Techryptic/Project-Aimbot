@@ -27,18 +27,11 @@ couple of schematics, after doing more tear down and researching on the
 Xbox one controller, I learned that it’s a 5v and the arduino nano is a 
 3.3v, so a conversion in power had to be made.
 
-
 ![image](http://anthonys.io/content/images/2016/11/IMG_20151103_174309-768x576.jpg)
-
-
 
   Xbox One Controller tear down..I learned that it’s a 5v and the arduino nano is a 3.3v, so a conversion in power had to be made.
 
-
-
-
-
-
+![](http://anthonys.io/content/images/2016/11/rt-768x747.jpg)
 
   Here is a quick schematic I drew up in gimp. Since the controller 
 runs on 5v, I added a 10k ohm in the ground that connects to the arduino
@@ -54,27 +47,19 @@ controller, it wasn’t easy tapping into the trigger button since it was a
 been a trigger button is now on button “B” on the controller, which we 
 can now tap into.
 
-
-
-
-
-
+![](http://anthonys.io/content/images/2016/11/20151104_152911-1024x576.jpg)
+![](http://anthonys.io/content/images/2016/11/20151104_1529390-1024x576.jpg)
 
   Here I tapped into the right connections, black wire is ground and 
 the red wire goes directly to the button, which will imitate us pressing
  the button. Not the best soldering I have done, but it got the job 
 done!
 
-
-
 After I did a quick test to make sure it worked, time to put the 
 controller back together and solder some extension wires on so it can 
 reach the arduino.
 
-
-
-
-
+![](http://anthonys.io/content/images/2016/11/20151117_233744-1024x576.jpg)
 
   I change the positive red wire for a white one, as I had to 
 re-solder it anyways. Here is a perfect picture showing you my busy 
@@ -93,7 +78,7 @@ area, great book btw!
 As you see from the picture, the black ground wire goes to orange, the white positive wire goes to red.
 
 
-
+![](http://anthonys.io/content/images/2016/11/XboxSensors-768x510.jpg)
 
 
 RGB Sensor testing..
@@ -117,84 +102,11 @@ Wrong Readings: Sometimes it wouldn’t read red if their was slightly more blue
 Below is the code I used when I used the RGB sensor if anyone is interested:  
 
 
-//Color recognition TCS230
 
-const int s0 = 8;  
-const int s1 = 9;  
-const int s2 = 12;  
-const int s3 = 11;  
-const int out = 10; 
-
-// Variables  
-int rCount = 0;  
-int gCount = 0;  
-int bCount = 0;  
-
-void setup()  
-{  
-  Serial.begin(9600); 
-  pinMode(s0, OUTPUT);  
-  pinMode(s1, OUTPUT);  
-  pinMode(s2, OUTPUT);  
-  pinMode(s3, OUTPUT);  
-  pinMode(out, INPUT);   
-  digitalWrite(s0, HIGH);  
-  digitalWrite(s1, HIGH);  
-}  
-
-void loop()  
-{  
-  color(); 
-  Serial.print("R : ");  
-  Serial.print(rCount, DEC);  
-  Serial.print(" G : ");  
-  Serial.print(gCount, DEC);  
-  Serial.print(" B : ");  
-  Serial.print(bCount, DEC);  
-  //Serial.println();  
-
-  if (rCount < bCount && rCount < gCount && rCount && rCount < 80)
-  {  
-   Serial.println(" - Red");
-   digitalWrite(13, HIGH);  
-  }  
-  else if (bCount < rCount && bCount < gCount)   
-  {  
-   Serial.println(" - Blue");  
-   digitalWrite(13, LOW);
-  }  
-  else if (gCount < rCount && gCount < bCount)  
-  {  
-   Serial.println(" - Green"); 
-   digitalWrite(13, LOW);
-  }  
-  else{
-   Serial.println();  
-   digitalWrite(13, LOW);
-  }
-}  
-
-void color()  
-{    
-  digitalWrite(s2, LOW);  
-  digitalWrite(s3, LOW);  
-  //count OUT, pRed, RED  
-  rCount = pulseIn(out, digitalRead(out) == HIGH ? LOW : HIGH);  
-  digitalWrite(s3, HIGH);  
-  //count OUT, pBLUE, BLUE  
-  bCount = pulseIn(out, digitalRead(out) == HIGH ? LOW : HIGH);  
-  digitalWrite(s2, HIGH);  
-  //count OUT, pGreen, GREEN  
-  gCount = pulseIn(out, digitalRead(out) == HIGH ? LOW : HIGH);  
-}
+As you can see the code is very long..and bloated
 
 
 
-  As you can see the code is very long..and bloated
-
-
-
- 
 
 LDR Sensor testing..(Winner)
 
@@ -221,7 +133,7 @@ phone, and only the yellow will be visible, all other colors would
 dissipate.
 
 
-
+![](http://anthonys.io/content/images/2016/11/ldr-pullup.png)
 
 
 
@@ -232,46 +144,15 @@ wire goes to A0, the other to GND, put an LDR in between them, and put a
 
 
 
-
+![](http://anthonys.io/content/images/2016/11/20151117_31847-1024x576.jpg)
 
 
   If you didn’t understand what I said above, here is a visual example of it.
 
-
-
- 
-
-void setup()  
-{ 
-  Serial.begin(9600); 
-} 
-
-void loop() { 
-
-  int sensorValue = analogRead(A0); 
-  Serial.println(sensorValue);  
-
-  if (sensorValue < 420) {
-    Serial.println(" SHOOT!"); 
-    digitalWrite(13, HIGH); 
-  } 
-  else {
-    digitalWrite(13, LOW);
-  }
-
-  delay(1); 
-}
-
-
-
-  As you can see the code is very short and clean
-
-
-
 After connecting everything together, everything worked flawlessly!
 
 
-First Game: Halo 5
+#First Game: Halo 5
 
 Halo is one of my more favorite games than the rest. With 
 #projectaimbot, it made it that more enjoyable. By default, when putting
@@ -281,7 +162,7 @@ in halo, actually a little too good that it started to take the fun away
 deaths.
 
 
-
+![](http://anthonys.io/content/images/2016/11/halo5.gif)
 
 
 
