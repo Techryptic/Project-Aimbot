@@ -1,4 +1,4 @@
-#[Project-Aimbot](http://anthonys.io/how-i-disrupt-the-video-game-industry/)-Device That Can Disrupt The Video Game Industry
+#[Project-Aimbot](http://anthonys.io/how-i-disrupt-the-video-game-industry/):Device That Can Disrupt The Video Game Industry
 
 Created by [@Tech](https://twitter.com/Tech) || [anthonys.io](http://anthonys.io)
 
@@ -37,8 +37,6 @@ Xbox one controller, I learned that it’s a 5v and the arduino nano is a
 runs on 5v, I added a 10k ohm in the ground that connects to the arduino
  nano, which is 3.3v, the right trigger goes straight to the button.
 
-
-
 From here, I had to find the trigger button which is the “Left 
 Trigger” on the controller, the issue with that is on the x-box one 
 controller, it wasn’t easy tapping into the trigger button since it was a
@@ -65,8 +63,6 @@ reach the arduino.
 re-solder it anyways. Here is a perfect picture showing you my busy 
 desk.
 
-
-
 It might be strange to say, but I prefer listening to the random 
 documentaries on Netflix than actually watching it. Painting a picture 
 of a scene in your mind gives you unlimited amount of imagination 
@@ -74,12 +70,9 @@ without sacrificing my full attention. It’s the perfect mix to do two
 things at once without error. I used my old Statistics book as my tape 
 area, great book btw!
 
-
 As you see from the picture, the black ground wire goes to orange, the white positive wire goes to red.
 
-
 ![](http://anthonys.io/content/images/2016/11/XboxSensors-768x510.jpg)
-
 
 RGB Sensor testing..
 
@@ -137,11 +130,7 @@ After connecting everything together, everything worked flawlessly!
 
 #First Game: Halo 5
 
-Halo is one of my more favorite games than the rest. With 
-#projectaimbot, it made it that more enjoyable. By default, when putting
- the cross hair over an enemy, it will turn red. It worked really well 
-in halo, actually a little too good that it started to take the fun away
- from the game. One game I played I ended up getting 27 kills and 0 
+Halo is one of my more favorite games than the rest. With projectaimbot, it made it that more enjoyable. By default, when putting the cross hair over an enemy, it will turn red. It worked really well in halo, actually a little too good that it started to take the fun away from the game. One game I played I ended up getting 27 kills and 0 
 deaths.
 
 ![](http://anthonys.io/content/images/2016/11/halo5.gif)
