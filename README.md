@@ -96,19 +96,10 @@ faster than any human can react.
 
 Below are some points where the RBG sensor wasn’t cutting it:
 
-
 Wrong Readings: Sometimes it wouldn’t read red if their was slightly more blue on the screenFalse Triggers: If their is yellow, orange, amber.. it would sometimes trigger the arudino causing it to fire the trigger buttonUnnecessary: I didn’t need it to read blue, or green, just red. And it did that at only 70% of the timeToo Sensitive: If you hold up the sensor in the air, it will always read red. That will cause major issues for this project.
 
-Below is the code I used when I used the RGB sensor if anyone is interested:  
 
-
-
-As you can see the code is very long..and bloated
-
-
-
-
-LDR Sensor testing..(Winner)
+#LDR Sensor testing..(Winner)
 
 After running into numerous errors with the RGB sensor, I decided to 
 take an “outside the box” approach. I ordered some Photo resistors 
@@ -132,25 +123,17 @@ want to only see yellow on your phone? Put a yellow filter over your
 phone, and only the yellow will be visible, all other colors would 
 dissipate.
 
-
 ![](http://anthonys.io/content/images/2016/11/ldr-pullup.png)
-
-
 
   Here is my schematics connections I did, using arduino nano. One 
 wire goes to A0, the other to GND, put an LDR in between them, and put a
  10k ohm inbetween A0 and 5v
 
-
-
-
 ![](http://anthonys.io/content/images/2016/11/20151117_31847-1024x576.jpg)
-
 
   If you didn’t understand what I said above, here is a visual example of it.
 
 After connecting everything together, everything worked flawlessly!
-
 
 #First Game: Halo 5
 
@@ -161,22 +144,16 @@ in halo, actually a little too good that it started to take the fun away
  from the game. One game I played I ended up getting 27 kills and 0 
 deaths.
 
-
 ![](http://anthonys.io/content/images/2016/11/halo5.gif)
-
-
 
   For a slight second, you can see the cross-hair turn red, this is that trigger response I used.
 
-
-
-Second Game: Call of Duty: Black Ops 2
+#Second Game: Call of Duty: Black Ops 2
 
 After the success on the halo game, decided to dabble in the world of
  call of duty. A game that I have been personally modding since Modern 
 Warfare 2 (JTAG xbox 360 that I ran online, I’ll post more about that in
  the end of this blog entry).
-
 
 Call of Duty, had to take a totally different approach to this game. 
 The issue came where the game itself is more cartoon than realistic, 
@@ -189,7 +166,8 @@ of duty has this feature where you can add attachments to your guns, one
  the game BLUE and the enemy Orange/Yellow/Red.
 
 
- 
+ ![](http://anthonys.io/content/images/2016/11/cod1-576x1024.jpg)
+ ![](http://anthonys.io/content/images/2016/11/cod2-576x1024.jpg)
 
 
 For a better comparison and usage, I ordered an HDMI slitter and split 
@@ -199,14 +177,11 @@ hanging everywhere it made it hard to see. So I played on the tv on the
 right that is clear from all of that.
 
 
-
-
+![](http://anthonys.io/content/images/2016/11/cod3-1024x576.jpg)
 
   The Left tv shows a perfect red with the color filter on top, Right Tv was the tv I would play on..Don’t mind the clutter!
 
-
-
-What I learn..
+#What I learn..
 
 Companies like Microsoft who designed the Xbox One and so-forth 
 capitalized on individuals who play these games whole-heartedly to win. 
@@ -222,7 +197,6 @@ the new Sony PS4, on any game (preferably FPS). Simply stated,
 Projectaimbot like any hardware hack as described in my initial 
 paragraph modified an electronic source to utilize it in a way that was 
 not intended by its developer.
-
 
 Soon after I finished this project for school, I started working on 
 version two which utilizes the HDMI wire and no sensors needed, very 
