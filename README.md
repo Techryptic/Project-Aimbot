@@ -28,7 +28,7 @@ Xbox one controller, I learned that it’s a 5v and the arduino nano is a
 3.3v, so a conversion in power had to be made.
 
 
-
+![image](http://anthonys.io/content/images/2016/11/IMG_20151103_174309-768x576.jpg)
 
 
 
