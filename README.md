@@ -27,12 +27,8 @@ couple of schematics, after doing more tear down and researching on the
 Xbox one controller, I learned that it’s a 5v and the arduino nano is a 
 3.3v, so a conversion in power had to be made.
 
-![image](http://anthonys.io/content/images/2016/11/IMG_20151103_174309-768x576.jpg)
-
   Xbox One Controller tear down..I learned that it’s a 5v and the arduino nano is a 3.3v, so a conversion in power had to be made.
-
-![](http://anthonys.io/content/images/2016/11/rt-768x747.jpg)
-
+  
   Here is a quick schematic I drew up in gimp. Since the controller 
 runs on 5v, I added a 10k ohm in the ground that connects to the arduino
  nano, which is 3.3v, the right trigger goes straight to the button.
@@ -45,9 +41,6 @@ controller, it wasn’t easy tapping into the trigger button since it was a
 been a trigger button is now on button “B” on the controller, which we 
 can now tap into.
 
-![](http://anthonys.io/content/images/2016/11/20151104_152911-1024x576.jpg)
-![](http://anthonys.io/content/images/2016/11/20151104_1529390-1024x576.jpg)
-
   Here I tapped into the right connections, black wire is ground and 
 the red wire goes directly to the button, which will imitate us pressing
  the button. Not the best soldering I have done, but it got the job 
@@ -56,8 +49,6 @@ done!
 After I did a quick test to make sure it worked, time to put the 
 controller back together and solder some extension wires on so it can 
 reach the arduino.
-
-![](http://anthonys.io/content/images/2016/11/20151117_233744-1024x576.jpg)
 
   I change the positive red wire for a white one, as I had to 
 re-solder it anyways. Here is a perfect picture showing you my busy 
@@ -71,8 +62,6 @@ things at once without error. I used my old Statistics book as my tape
 area, great book btw!
 
 As you see from the picture, the black ground wire goes to orange, the white positive wire goes to red.
-
-![](http://anthonys.io/content/images/2016/11/XboxSensors-768x510.jpg)
 
 RGB Sensor testing..
 
@@ -116,13 +105,9 @@ want to only see yellow on your phone? Put a yellow filter over your
 phone, and only the yellow will be visible, all other colors would 
 dissipate.
 
-![](http://anthonys.io/content/images/2016/11/ldr-pullup.png)
-
   Here is my schematics connections I did, using arduino nano. One 
 wire goes to A0, the other to GND, put an LDR in between them, and put a
  10k ohm inbetween A0 and 5v
-
-![](http://anthonys.io/content/images/2016/11/20151117_31847-1024x576.jpg)
 
   If you didn’t understand what I said above, here is a visual example of it.
 
@@ -132,8 +117,6 @@ After connecting everything together, everything worked flawlessly!
 
 Halo is one of my more favorite games than the rest. With projectaimbot, it made it that more enjoyable. By default, when putting the cross hair over an enemy, it will turn red. It worked really well in halo, actually a little too good that it started to take the fun away from the game. One game I played I ended up getting 27 kills and 0 
 deaths.
-
-![](http://anthonys.io/content/images/2016/11/halo5.gif)
 
   For a slight second, you can see the cross-hair turn red, this is that trigger response I used.
 
@@ -154,19 +137,11 @@ of duty has this feature where you can add attachments to your guns, one
  of the attachments being “Thermal Sight”, which will make everything in
  the game BLUE and the enemy Orange/Yellow/Red.
 
-
- ![](http://anthonys.io/content/images/2016/11/cod1-576x1024.jpg)
- ![](http://anthonys.io/content/images/2016/11/cod2-576x1024.jpg)
-
-
 For a better comparison and usage, I ordered an HDMI slitter and split 
 the connection to two of my TVs. Reason why this was sorta needed is 
 that when I connected the LDR to the TV on the left, and with wires 
 hanging everywhere it made it hard to see. So I played on the tv on the 
 right that is clear from all of that.
-
-
-![](http://anthonys.io/content/images/2016/11/cod3-1024x576.jpg)
 
   The Left tv shows a perfect red with the color filter on top, Right Tv was the tv I would play on..Don’t mind the clutter!
 
