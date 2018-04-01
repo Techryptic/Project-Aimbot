@@ -1,6 +1,6 @@
-#[Project-Aimbot](http://anthonys.io/how-i-disrupt-the-video-game-industry/):Device That Can Disrupt The Video Game Industry
+# [Project-Aimbot]():Device That Can Disrupt The Video Game Industry
 
-Created by [@Tech](https://twitter.com/Tech) || [anthonys.io](http://anthonys.io)
+Created by [@Tech](https://twitter.com/Tech)
 
 With my new fascination, a whole sleet of video games came out for 
 the Xbox one around the same time, these titles include Call of duty, 
@@ -195,5 +195,3 @@ longer works for educational purposes only.
 
 Contact
 Point of Contact: [@Tech](https://twitter.com/Tech)
-You can see more of my projects or contact me at [http://anthonys.io/](http://anthonys.io/).
-        
